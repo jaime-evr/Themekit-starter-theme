@@ -1,0 +1,17 @@
+{%- if layout == 'theme' -%}
+  <script type="text/javascript" src="{{ 'application.js' | asset_url }}" defer="defer"></script>
+{%- else -%}
+  <link rel="prefetch" href="{{ 'application.js' | asset_url }}" as="script">
+{%- endif -%}
+
+{%- if template == 'cart' -%}
+  <script type="text/javascript" src="{{ 'template.cart.js' | asset_url }}" defer="defer"></script>
+{%- else -%}
+  <link rel="prefetch" href="{{ 'template.cart.js' | asset_url }}" as="script">
+{%- endif -%}
+
+{%- if template == 'product' -%}
+  <script type="text/javascript" src="{{ 'template.product.js' | asset_url }}" defer="defer"></script>
+{%- else -%}
+  <link rel="prefetch" href="{{ 'template.product.js' | asset_url }}" as="script">
+{%- endif -%}

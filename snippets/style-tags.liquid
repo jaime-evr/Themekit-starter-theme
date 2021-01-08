@@ -1,0 +1,5 @@
+{%- if layout == 'theme' -%}
+<link type="text/css" href="{{ 'application.scss.css' | asset_url }}" rel="stylesheet">
+{%- else -%}
+<link rel="prefetch" href="{{ 'application.scss.css' | asset_url }}" as="style">
+{%- endif -%}
